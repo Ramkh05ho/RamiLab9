@@ -14,8 +14,8 @@
 #define TEMPSENSOR1 V6
 #define TEMPSENSOR2 V7
 #define NOTIFY_EVENT_CODE "notify"
-#define HIGHMSG "Light Level Too High!"
-#define LOWMSG "Light Level Too Low!"
+#define HIGHMSG "Light Level Is TOO High"
+#define LOWMSG "Light Level Is TOO Low"
 
 // SYSTEM_MODE(MANUAL); // remember to remove
 SYSTEM_THREAD(ENABLED);
@@ -92,7 +92,7 @@ void loop()
   if (lvt)
   {
     display.println("Light Mode");
-    display.diplay();
+    display.display();
     if (Button1 == HIGH)
     {
       lvr = true;
